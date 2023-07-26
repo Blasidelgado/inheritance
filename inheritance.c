@@ -27,13 +27,13 @@ int main(void)
     srand(time(0));
 
     // Create a new family with three generations
-    person *p = create_family(GENERATIONS);
+    person *family = create_family(GENERATIONS);
 
     // Print family tree of blood types
-    print_family(p, 0);
+    print_family(family, 0);
 
     // Free memory
-    free_family(p);
+    free_family(family);
 }
 
 // Create a new individual with `generations`
